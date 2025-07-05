@@ -1,0 +1,11 @@
+{
+  "saludo": "Hola, soy",
+  "nombre": "Laura",
+  "frases": [
+    "Ingeniera Informática",
+    "Desarrolladora Web",
+    "Especialista en Ciberseguridad"
+  ],
+  "experiencia": "EXPERIENCIA LABORAL",
+  "educacion": "EDUCACIÓN"
+}

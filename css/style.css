@@ -54,9 +54,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: transparent;
   filter: drop-shadow(10px);
   z-index: 100;
+  background-color: rgba(255, 255, 255, 0.8); /* Modo claro */
+  backdrop-filter: blur(6px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
@@ -90,6 +92,12 @@ nav a:hover,
 nav a:active {
   color:  var(--secondary);
   border-bottom: 3px solid var(--secondary);
+}
+
+body.active header {
+  background-color: rgba(18, 18, 18, 0.8); /* Modo oscuro */
+  backdrop-filter: blur(6px);
+  box-shadow: 0 2px 10px rgba(255, 255, 255, 0.05);
 }
 
 body.active{

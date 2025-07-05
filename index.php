@@ -1,0 +1,141 @@
+<?php include_once 'includes/templates/header.php' ?>
+
+<section class="home">
+    <div class="home-img">
+        <img src="./img/laura.png" class="foto-perfil"/>
+    </div>    
+    <!--Sumary-->
+    <div class="home-content">
+        <h1 data-lang="saludo">
+            <span id="saludo-text">Hola, soy</span> <span class="resaltado" id="nombre">Laura</span>
+        </h1>
+        <h3 class="typing-text">Soy <span> </span></h3>
+        <p>Apasionada por la ciberseguridad y el desarrollo de software seguro, con una sólida formación técnica en ingeniería informática.
+            Busco aplicar mi capacidad analítica y habilidades técnicas para fortalecer la seguridad de sistemas informáticos.
+            Con amplia experiencia en entornos laborales en los que se valora el compromiso y la capacidad de trabajar en equipo.
+            Me caracterizo por mi dinamismo, proactividad y entusiasmo.
+        </p>
+        <div class="social-icon">
+            <ion-icon name="logo-whatsapp"></ion-icon>
+            <ion-icon name="logo-github"></ion-icon>
+            <ion-icon name="logo-linkedin"></ion-icon>
+            <ion-icon name="mail-outline"></ion-icon>
+        </div>
+        <a href="#" class="btn">Contrátame</a>
+    </div>
+</section>
+
+<section class="experience">
+    <h1 data-lang="experiencia">EXPERIENCIA LABORAL</h1>
+    <!--Work Experience-->
+    <b>INGENIÉRO DE DESARROLLO SOFTWARE - INFORMÁTICA ASTRON</b> <br>
+    <p>INFORMÁTICA ASTRON | 19 mayo 2025 - actualmente</p>
+    <ol>Elaboración documental del ENS. </ol>
+    <ol>Administrador de sistemas, windows, bases de datos, servidores, etc.</ol>
+    <ol>Funciones de soporte técnico a administraciones públicas y programación.</ol>
+
+    <b>PRÁCTICAS - INETUM</b> <br>
+    <p>INETUM | 17 Septiembre 2024 - 17 Enero 2025</p>
+    <ol>Elaboración documental de procesos y procedimientos.</ol>
+    <ol>Soporte a la gestión del servicio y peticiones de comunicaciones y sistemas.</ol>
+    <ol>Apoyo en el servicio del NIX.</ol>
+
+    <b>PRÁCTICAS - LAUFERGAR, S.L.</b> <br>
+    <p>LAUFERGAR, S.L. | 18 Julio 2022 - 10 Otubre 2020</p>
+    <ol>Desarrollo de Software: Creación de aplicaciones web para automatizar horarios y cuadrantes de guardias con PHP, MySQL y JavaScript.</ol>
+    <ol>Atención al Cliente: Comunicación efectiva para recopilación de requisitos y satisfacción de necesidades específicas del cliente.</ol>
+    <ol>Habilidades Tecnológicas: Manejo avanzado de herramientas para desarrollo web, gestión de archivos y pruebas de software.</ol>
+</section>
+
+<section class="education">
+    <h1 data-lang="educacion">EDUCACIÓN</h1>
+    <!--Education-->
+    <b>💣 <a href="master2.php">MÁSTER PROFESIONAL EN SEGURIDAD OFENSIVA</b></a> <br>
+    <p>Campus Internacional de Ciberseguridad | 2025 - 2026</p>
+    <p>Este máster, con un enfoque 100 % práctico y en colaboración con Offensive Security, me está formando en las técnicas más avanzadas de pentesting, hacking ético y análisis de vulnerabilidades. 
+        Mediante la metodología learning by doing, trabajo con laboratorios reales y escenarios de ataque para dominar cada fase del proceso ofensivo. 
+        El objetivo es pensar como un atacante para proteger como un experto.</p>
+    <p>🧠 Competencias clave adquiridas</p>
+    <ol>Pentesting completo: footprinting, reconocimiento, explotación y post-explotación</ol>
+    <ol>Análisis y explotación de vulnerabilidades (buffer overflows, malware, payloads)</ol>
+    <ol>Ingeniería inversa y análisis de malware (estático, dinámico, sandbox)</ol>
+    <ol>Hacking de redes, sniffing, spoofing y evasión de firewalls/IDS</ol>
+    <ol>Ataques a sistemas Windows y Linux: bastionado, escalada y evasión</ol>
+    <ol>Criptografía aplicada y criptoanálisis</ol>
+    <ol>OSINT y técnicas de ingeniería social para la obtención de información</ol>
+    <ol>Simulación de ataques en entornos reales (WiFi, IoT, servidores, cloud)</ol>
+
+    <b>🛡️ <a href="master1.php">MÁSTER PROFESIONAL EN DIRECCIÓN DE CIBERSEGURIDAD, HACKING ÉTICO Y SEGURIDAD</a></b> <br>
+    <p>EIP International Business School | 2023 - 2025</p>
+    <p>Este máster me ha permitido adquirir una visión integral de la ciberseguridad, combinando estrategia, hacking ético y defensa de sistemas. <br>
+        He trabajado tanto con técnicas ofensivas como con metodologías de gestión y prevención, preparándome para afrontar amenazas reales desde distintos frentes. <br>
+        Además, me he formado para certificaciones como <b>OSCP</b>, <b>CISM</b> y <b>Ethical Hacking Essentials</b>.</p>
+    <p>🧠 Competencias clave adquiridas</p>
+    <ol>Hacking ético: footprinting, escaneo, explotación, evasión de IDS/firewalls</ol>
+    <ol>Pentesting en redes, sistemas, web, móviles y entornos IoT/OT</ol>
+    <ol>Criptografía avanzada, esteganografía y criptoanálisis</ol>
+    <ol>Ciberinteligencia, análisis de amenazas y vigilancia en Deep/Dark Web</ol>
+    <ol>Gestión de riesgos y normativa ISO 27001, ISO 31000, ENS</ol>
+    <ol>Arquitectura de ciberseguridad y diseño de planes de continuidad</ol>
+    <ol>Seguridad en el desarrollo de software y auditoría de código</ol>
+    <ol>Estrategias de defensa ante ciberincidentes (Blue Team)</ol>
+    <ol>Técnicas de ciberresiliencia y gestión de crisis</ol>
+    <ol>Aplicación de ciberseguridad en tecnologías disruptivas (IA, cloud, IoT)</ol>
+
+    <b>🎓 <a href="grado.php">GRADO EN INGENIERÍA INFORMÁTICA Y TECNOLOGÍAS VIRTUALES</a></b> <br>
+    <p>Universidad Loyola Andalucía | 2019 - 2024</p>
+    <P>Durante este grado desarrollé una sólida base en programación, estructuras de datos, sistemas operativos y redes. <br>
+        También trabajé con tecnologías emergentes como la simulación, realidad aumentada y desarrollo de entornos virtuales. <br>
+        Finalicé con prácticas externas y un proyecto centrado en el desarrollo de una aplicación para la mejora del trastorno del aprendizaje.
+    </P>
+    <p>🧠 Competencias clave adquiridas</p>
+    <ol>Programación avanzada (C, Python, Java, JavaScript)</ol>
+    <ol>Desarrollo web y de aplicaciones móviles</ol>
+    <ol>Bases de datos (SQL) y modelado de datos</ol>
+    <ol>Sistemas operativos y administración de redes</ol>
+    <ol>Ingeniería del software y trabajo en equipo ágil</ol>
+    <ol>Realidad virtual, simulación y animación 3D</ol>
+    <ol>Fundamentos de inteligencia artificial y machine learning</ol>
+    <ol>Interfaces hápticas y experiencia de usuario</ol>
+</section>
+
+<section class="skills">
+    <h1 data-lang="habilidades">HABILIDADES</h1>
+    <!--Skills-->
+    <p>Hard Skills</p>
+    <ol>Programación Web (HTML5/CSS/PHP/JavaScript)</ol>
+    <ol>C/C++/C#, Python, Bash</ol>
+    <ol>Analísis de vulnerabilidades</ol>
+    <ol>Pretesting (Metasploit/Kali Linux)</ol>
+    <ol>ISO 27001/NIST/ENS</ol>
+    <ol>OWSAP</ol>
+
+    <p>Soft Skills</p>
+    <ol>Creatividad</ol>
+    <ol>Comunicación</ol>
+    <ol>Trabajo en equipo</ol>
+    <ol>Liderazgo</ol>
+    <ol>Atención al cliente</ol>
+    <ol>Adaptavilidad</ol>
+    <ol>Priorización de tareas</ol>
+
+</section>
+
+<section class="idioms">
+    <h1 data-lang="idiomas">IDIOMAS</h1>
+    <!--Idioms-->
+    <p>Español Nativo</p>
+    <p>Inglés B2</p>
+</section>
+
+<section class="certifications">
+    <h1 data-lang="certificaciones">CERTIFICACIONES</h1>
+    <!--Certifications-->
+    <ol>Ciberseguridad de Google</ol>
+    <ol>IT Specialist Cybersecurity</ol>
+    <ol>Cybersecurity Awareness</ol>
+    <ol>Hardvard Manage Mentor</ol>
+</section>
+</body>
+
+<?php include_once 'includes/templates/footer.php' ?>

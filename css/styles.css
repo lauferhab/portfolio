@@ -226,6 +226,11 @@ body.active .circle .sun{
   display: none;
 }
 
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 10rem;
+}
+
 /* ---------
 -- HOME -- 
 ----------*/
@@ -235,7 +240,6 @@ body.active .circle .sun{
     padding: 10rem 9% 10rem;
     display: flex;
     align-items: center;
-    padding: 0 9%;
     background-size: cover;
     background-position: center;
     background-color: var(--bg-color);
@@ -256,41 +260,13 @@ body.active .circle .sun{
     color: var(--text-color);
 }
 
-.home-content .text-animate {
-    position: relative;
-    width: 48.75rem;
-}
-
-.home-content .text-animate h3 {
-    font-size: 4rem;
-    font-weight: 700;
-    color: transparent;
-    -webkit-text-stroke: .7px var(--main-color);
-    background-image: linear-gradient(var(--main-color), var(--main-color));
-    background-repeat: no-repeat;
-    background-clip: unset;
-    -webkit-background-clip: text;
-    background-position: -48.5rem 0;
-    animation: homeBgText 6s linear infinite;
-    animation-delay: 2s;
-}
-
-.home-content .text-animate h3::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    border-right: 2px solid var(--main-color);
-    z-index: -1;
-    animation: homeCursorText 6s linear infinite;
-    animation-delay: 2s;
-}
-
 .home-content p {
     font-size: 2.4rem;
     margin: 2rem 0 4rem;
+}
+
+.home .nombre {
+    color: var(--main-color);
 }
 
 /* BOTONES */
@@ -409,18 +385,27 @@ body.active .circle .sun{
     width: 100%;
 }
 
-.home-content .typewriter{
-  font-size: 2.5rem;
+.typing-text {
+  font-size: 3rem;
   font-weight: 600;
+  min-height: 2em;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-top: 10px;
 }
 
-.home-content .typewriter-text{
+.typing-text span {
   color: var(--main-color);
+  animation: blink 0.7s step-end infinite;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
-section {
-    min-height: 100vh;
-    padding: 10rem 9% 10rem;
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
 }
 
 /* ---------
@@ -654,8 +639,18 @@ section .about-content h3{
 ----------*/
 
 .skills {
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background-color: var(--second-bg-color);
+    text-align: center;
+}
+
+.skills .skill {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 2rem;
 }
 
 .skills .skills-row {
@@ -939,30 +934,18 @@ section .about-content h3{
         padding: 2rem 4%;
     }
 
-    section {
-        padding: 10rem 4% 2rem;
-    }
-
-    .home {
-        padding: 0 4%;
-    }
-
     .portfolio .portfolio-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
         gap: 3rem;
     }
-
-    .footer {
-        padding: 2rem 4%;
-    }
 }
 
 @media (max-width: 900px) {
     .header {
         position: absolute;
-        background:  var(--bg-color);    
+        background:  var(--bg-color);
     }
 
     .home {
@@ -977,10 +960,10 @@ section .about-content h3{
         position: absolute;
         top: 100%;
         left: -100%;
+        right: -100%;
         width: 100%;
         padding: 1rem 4%;
         background: var(--main-color);
-        box-shadow: 0.5rem 1rem rgba(0, 0, 0, .2);
         z-index: 1;
         transition: .25s ease;
         transition-delay: .25s;
@@ -1002,6 +985,7 @@ section .about-content h3{
         height: 100%;
         background:  var(--bg-color);
         border-top: .1rem solid rgba(0, 0, 0, .2);
+        border-bottom: .1rem solid rgba(0, 0, 0, .2);
         z-index: -1;
         transition: .25s ease;
         transition-delay: 0s;
@@ -1026,8 +1010,26 @@ section .about-content h3{
         transition-delay: .25s;
     }
 
-    .education {
-        padding: 10rem 4% 5rem 5%;
+    .about-img img {
+        width: 60%;
+    }
+
+    .about-img .circle-spin {
+        width: 80%;
+        height: 80%;
+    }
+
+    .typing-text {
+        font-size: 2.2rem;
+    }
+
+    .home-content h1 {
+        font-size: 2.6rem;
+    }
+
+
+    .home-content p {
+        font-size: 2rem;
     }
 
     .portfolio .boxes .box {
@@ -1036,6 +1038,16 @@ section .about-content h3{
 
     .skills .skill-container .slide {
         width: 50%;
+    }
+
+    [data-aos] {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+    }
+
+    .footer {
+        flex-direction: row;
     }
 }
 
@@ -1054,11 +1066,6 @@ section .about-content h3{
         background: transparent;
     }
 
-    .home-content h1 {
-        display: flex;
-        flex-direction: column;
-    }
-
     .home-sci {
         width: 160px;
     }
@@ -1067,19 +1074,19 @@ section .about-content h3{
         width: 38px;
         height: 38px;
     }
+
+    .footer {
+        flex-direction: row;
+    }
+
+    .footer p {
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 460px) {
     .home {
         background: transparent;
-    }
-
-    .home-content h1 {
-        font-size: 5.2rem;
-    }
-
-    .home-content p {
-        font-size: 2rem;
     }
 
     .portfolio .portfolio-container {
@@ -1089,21 +1096,8 @@ section .about-content h3{
         gap: 3rem;
     }
 
-    .education {
-        padding: 10rem 4% 5rem 5%;
-    }
-
     .contact form .input-box .input-field {
         width: 100%;
-    }
-
-    .footer {
-        flex-direction: column-reverse;
-    }
-
-    .footer p {
-        margin-top: 2rem;
-        text-align: center;
     }
 }
 
@@ -1125,28 +1119,6 @@ section .about-content h3{
 }
 
 /* ANIMACIONES */
-@keyframes homeBgText {
-    0%,10%,100% {
-        background-position: -48.5rem 0;
-    }
-    65%,85% {
-        background-position: 0 0;
-    }
-}
-
-@keyframes homeCursorText {
-    0%,10%,100% {
-        width: 0;
-    }
-    65%,78%,85% {
-        width: 100%;
-        opacity: 1;
-    }
-    75%,81% {
-        opacity: 0;
-    }
-}
-
 @keyframes aboutSpinner {
     100% {
         transform: translate(-50%, -50%) rotate(360deg);

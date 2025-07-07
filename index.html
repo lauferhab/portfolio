@@ -23,18 +23,18 @@
 
     <!-- header design -->
     <header class="header">
-        <a href="#" class="logo" data-aos="zoom-in" data-aos-duration="1100">Laura <span>Ferrer</span></a>
+        <a href="#" class="logo">Laura <span>Ferrer</span></a>
         <nav class="navbar">
-            <a data-aos="fade-up" data-aos-duration="1100" data-aos-delay="100" href="index.php" class="active" >HOME</a>
-            <a data-aos="fade-up" data-aos-duration="1100" data-aos-delay="200" href="#about">SOBRE MI</a>
-            <a data-aos="fade-up" data-aos-duration="1100" data-aos-delay="300" href="#education">EDUCACION</a>
-            <a data-aos="fade-up" data-aos-duration="1100" data-aos-delay="400" href="#skills">SKILLS</a>
-            <a data-aos="fade-up" data-aos-duration="1100" data-aos-delay="500" href="#portfolio" >PORTFOLIO</a>
+            <a href="index.php" class="active" >HOME</a>
+            <a href="#about">SOBRE MI</a>
+            <a href="#education">EDUCACION</a>
+            <a href="#skills">SKILLS</a>
+            <a href="#portfolio" >PORTFOLIO</a>
 
             <span class="active-nav"></span>
         </nav>
         <div class="header-controls">
-            <div data-aos="fade-up" data-aos-duration="1100" data-aos-delay="100" class="dark-mode link">
+            <div class="dark-mode link">
                 <div class="circle">
                     <ion-icon class="sun" name="sunny"></ion-icon>
                     <ion-icon class="moon" name="moon"></ion-icon>
@@ -42,7 +42,7 @@
                 </div>
             </div>
 
-            <div data-aos="fade-up" data-aos-duration="1100" data-aos-delay="100" class="language-selector link">
+            <div class="language-selector link">
                 <button id="lang-es" aria-label="Cambiar a Español" class="active">
                     <img src="./img/espana.png" alt="Español" />
                 </button>
@@ -60,22 +60,22 @@
     <!-- home section design -->
     <section class="home" id="home">
         <div class="home-content">
-            <h1 data-aos="fade-left" data-aos="fade-left" data-aos-duration="1100" data-aos-delay="700" data-lang="saludo">
+            <h1 data-lang="saludo">
                 <span id="saludo-text" class="saludo"></span> <span id="nombre" class="nombre"></span>
             </h1>
-            <div class="typewriter"  data-aos="fade-right" data-aos-duration="1100" data-aos-delay="900" ><span class="typewriter-text"></span><label for="">|</label></div>
-            <p data-aos="flip-up" data-aos-duration="1100" data-aos-delay="1100">Graduada en Ingeniería Informática y Tecnologías Virtuales.
+            <h3 class="typing-text"><span> </span></h3> 
+            <p data-aos="flip-up">Graduada en Ingeniería Informática y Tecnologías Virtuales.
                 Especializada en Ciberseguridad.
             </p>
 
-            <div class="btn-box" data-aos="zoom-in-left" data-aos-duration="1100" data-aos-delay="1700">
+            <div class="btn-box">
                 <a href="#" class="btn">Descargar CV</a>
             </div>
 
             <div class="home-sci">
-                <a href="#" data-aos="zoom-out" data-aos-duration="1100" data-aos-delay="1300"><i class='bx bxl-whatsapp' ></i></a>
-                <a href="#" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="1400"><i class='bx bxs-envelope' ></i></a>
-                <a href="#" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="1500"><i class='bx bxl-linkedin' ></i></a>
+                <a href="#"><i class='bx bxl-whatsapp' ></i></a>
+                <a href="#"><i class='bx bxs-envelope' ></i></a>
+                <a href="#"><i class='bx bxl-linkedin' ></i></a>
             </div>
 
             <!-- <div class="home-imgHover"></div> -->
@@ -170,26 +170,28 @@
 
     <!-- skills section design -->
     <section class="skills" id="skills">
-    <h2 class="heading">Mis <span>Habilidades</span></h2>
-        <div class="skills-row">
-            <div class="skills-column">
-                <h3 class="title">Hard Skills</h3>
-                <div class="skills-box">
-                    <div class="skills-content">
-                        <div class="progress">
-                            <h3>Programación Web <span>100%</span></h3>
-                            <div class="bar"><span></span></div>
+        <div class="skill">
+            <h2 class="heading">Mis <span>Habilidades</span></h2>
+            <div class="skills-row">
+                <div class="skills-column">
+                    <h3 class="title">Hard Skills</h3>
+                    <div class="skills-box">
+                        <div class="skills-content">
+                            <div class="progress">
+                                <h3>Programación Web <span>100%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="skills-column">
-                <h3 class="title">Soft Skills</h3>
-                <div class="skills-box">
-                    <div class="skills-content">
-                        <div class="progress">
-                            <h3>Inglés <span>75%</span></h3>
-                            <div class="bar"><span></span></div>
+                <div class="skills-column">
+                    <h3 class="title">Soft Skills</h3>
+                    <div class="skills-box">
+                        <div class="skills-content">
+                            <div class="progress">
+                                <h3>Inglés <span>75%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -288,7 +290,7 @@
     <!-- footer design -->
     <footer class="footer">
         <div class="footer-text">
-            <p>Copyrigth &copy 2023 | Todos los derechos reservados.</p>
+            <p>Copyrigth &copy 2025 </p>
         </div>
 
         <div class="footer-iconTop">
@@ -301,7 +303,12 @@
     <script src="js/tema.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init({offset:0});
+        AOS.init({
+            once: true,
+            offset: 80,
+            duration: 1000,
+            easing: "ease-out",
+        });
     </script>
 </body>
 

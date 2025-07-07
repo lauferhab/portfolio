@@ -1,5 +1,5 @@
 {
-  "saludo": "Hola, soy",
+  "saludo": "Hola, me llamo",
   "nombre": "Laura",
   "frases": [
     "Ingeniera Informática",
@@ -7,6 +7,6 @@
     "Especialista en Ciberseguridad"
   ],
   "about": "hola",
-  "experiencia": "EXPERIENCIA LABORAL",
-  "educacion": "EDUCACIÓN"
+  "experiencia": "Experiencia",
+  "educacion": "Educación"
 }

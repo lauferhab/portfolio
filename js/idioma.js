@@ -14,10 +14,6 @@ async function setLanguage(lang) {
   const res = await fetch(`./lang/${lang}.json`);
   const translations = await res.json();
 
-  // Saludo y nombre con estilos conservados
-  document.getElementById("saludo-text").textContent = translations.saludo;
-  document.getElementById("nombre").textContent = translations.nombre;
-
   // Frases dinámicas con typing
   const span = document.querySelector(".typing-text span");
   if (span && translations.frases) {
@@ -26,7 +22,7 @@ async function setLanguage(lang) {
 
     document.querySelectorAll("[data-lang]").forEach(el => {
       const key = el.getAttribute("data-lang");
-      if (key === "saludo" || key === "frases") return;
+      if (key === "frases") return;
 
       if (translations[key]) {
         el.textContent = translations[key];
@@ -69,24 +65,4 @@ function startTyping(frases, el) {
   }
 
   escribir();
-}
-
-observer.observe(document.querySelector(".home-content"));
-
-const observer = new IntersectionObserver((entries) => {
-  const el = document.querySelector(".typing-text span");
-
-  entries.forEach(entry => {
-    if (entry.isIntersecting && !typingActivo) {
-      typingActivo = true;
-      startTyping(["Frase 1", "Frase 2"], el);
-    } else if (!entry.isIntersecting) {
-      stopTyping();
-    }
-  });
-}, { threshold: 0 });
-
-function stopTyping() {
-  clearTimeout(typingTimeout);
-  typingActivo = false;
 }

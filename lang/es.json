@@ -1,12 +1,86 @@
 {
-  "saludo": "Hola, me llamo",
-  "nombre": "Laura",
+  "nav_about": "SOBRE MI",
+  "nav_educacion": "EDUCACIÓN",
+  "nav_contacto":"CONTACTO",
+  
+  "home_static": "Hola, me llamo",
+  "home_span": "Laura",
   "frases": [
     "Ingeniera Informática",
-    "Desarrolladora Web",
-    "Especialista en Ciberseguridad"
+    "Desarrolladora",
+    "Especialista IT",
+    "Hacker Ética"
   ],
-  "about": "hola",
+  "home_titulo":"Graduada en Ingeniería Informática y Tecnologías Virtuales. Especializada en Ciberseguridad.",
+  "home_cv": "Descargar CV",
+
+  "about_static": "Sobre",
+  "about_span": "Mi",
+  "about_titulo": "¡Ingeniera en Ciberseguridad!",
+  "about_section": "Apasionada por la ciberseguridad y el desarrollo seguro de software. Cuento conexperiencia en entornos profesionales de soporte técnico, automatización deprocesos y desarrollo web. Mi objetivo es contribuir a la seguridad y eficiencia de lossistemas informáticos combinando habilidades técnicas y pensamiento analítico.Me caracterizo por mi dinamismo, proactividad y entusiasmo.",
+
+  "education_static": "Mis",
+  "education_span": "Experiencias",
+  "educacion": "Educación",
   "experiencia": "Experiencia",
-  "educacion": "Educación"
+  "exp_master2_titulo": "Máster en Ciberseguridad Ofensiva - Campus Internacional de Ciberseguridad",
+  "exp_master2_intro": "Formación práctica avanzada en hacking ético, análisis de vulnerabilidades y técnicas ofensivas mediante laboratorios.",
+  "exp_master2_1": "Pentesting completo (reconocimiento, explotación y post-explotación)",
+  "exp_master2_2": "Análisis de vulnerabilidades, ingeniería inversa y malware",
+  "exp_master2_3": "Hacking de redes, evasión de firewalls y ataques a sistemas",
+  "exp_master2_4": "Criptografía aplicada y OSINT",
+  "exp_master2_5": "Simulación de ataques en entornos reales (WiFi, IoT, cloud)",
+
+  "exp_master1_titulo": "Máster en Dirección de Ciberseguridad, Hacking Ético y Seguridad - EIP Business School",
+  "exp_master1_intro": "Visión estratégica y técnica de la ciberseguridad, combinando ofensiva, defensa y gestión. Preparación para OSCP, CISM y EHE.",
+  "exp_master1_1": "Hacking ético, pentesting avanzado y auditorias",
+  "exp_master1_2": "Gestión de ciberincidentes, continuidad y resiliencia",
+  "exp_master1_3": "Aplicación en IA, cloud y entornos OT",
+
+  "exp_grado_titulo": "Grado en Ingeniería Informática y Tecnologías Virtuales - Universidad Loyola Andalucía",
+  "exp_grado_intro": "Base sólida en programación, redes, sistemas y tecnologías emergentes. Proyecto final orientado a la mejora del aprendizaje.",
+  "exp_grado_1": "Programación (C, Python, JS, SQL) y desarrollo web/móvil",
+  "exp_grado_2": "Realidad virtual, simulación 3D y UX",
+  "exp_grado_3": "Fundamentos de IA, machine learning y entornos interactivos",
+
+  "exp_astron_fecha": " 19 mayo 2025 - actualmente",
+  "titulo_astron": "Ingeniera de Desarrollo Software - Informática Astron Multimedia, S.L.",
+  "exp_astron_intro": "Colaboración en proyectos técnicos para administraciones públicas con enfoque en seguridad y soporte.",
+  "exp_astron_1": "Elaboración documental del ENS.",
+  "exp_astron_2": "Administración de sistemas, bases de datos y servidores.",
+  "exp_astron_3": "Soporte técnico y programación.",
+
+  "exp_inetum_fecha": "17 septiembre 2024 - 17 enero 2025",
+  "titulo_inetum": "Prácticas de Ciberseguridad — Inetum",
+  "exp_inetum_intro": "Colaboración en el área de ciberseguridad prestando soporte a la gestión del servicio y documentación técnica de procesos.",
+  "exp_inetum_1": "Elaboración documental de procesos y procedimientos.",
+  "exp_inetum_2": "Soporte a la gestión del servicio y peticiones de comunicaciones y sistemas.",
+  "exp_inetum_3": "Apoyo en el servicio del NIX.",
+
+  "exp_lauferga_fecha": "18 julio 2022 - 10 octubre 2022",
+  "titulo_lauferga": "Prácticas de Desarrollo Web — LauFerGar, S.L.",
+  "exp_laufega_intro": "Desarrollo de soluciones web personalizadas para automatización interna y atención directa al cliente.",
+  "exp_lauferga_1": "Creación de aplicaciones web para automatizar horarios y cuadrantes deguardias con PHP, MySQL y JavaScript.",
+  "exp_lauferga_2": "Comunicación efectiva para la satisfacción del cliente.",
+  "exp_lauferga_3": "Manejo avanzado de herramientas para desarrollo web, gestión de archivosy pruebas de software.",
+
+  "skills_static": "Mis",
+  "skills_span": "Habilidades",
+  "habilidades_hard": "Hard Skills",
+  "habilidades_soft": "Soft Skills",
+
+  "hard_1": "Análisis de vulnerabilidades",
+  "hard_2": "C/C++/C#, Python, Bash, JavaScript",
+  "hard_3": "Pretesting",
+  "hard_4": "Programación Web",
+  "hard_5": "Velneo",
+
+  "soft_1": "Adaptabilidad",
+  "soft_2": "Atención al cliente",
+  "soft_3": "Creatividad",
+  "soft_4": "Comunicación",
+  "soft_5": "Trabajo en equipo",
+
+  "proyect1_titulo": "Aplicación para gestión de turnos y horarios",
+  "proyect1_descripcion": "Aplicación web desarrollada para automatizar la planificación de cuadrantes de guardias. Optimiza la gestión del personal y mejora la organización interna."
 }

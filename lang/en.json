@@ -1,12 +1,84 @@
 {
-  "saludo": "Hi, my name is",
-  "nombre": "Laura",
+  "nav_about": "ABOUT ME",
+  "nav_educacion": "EDUCATION",
+  "nav_contacto":"CONTACT",
+
+  "home_static": "Hi, my name is",
+  "home_span": "Laura",
   "frases": [
     "Computer Engineer",
-    "Web Developer",
-    "Cybersecurity Specialist"
+    "Developer",
+    "IT Specialist",
+    "Ethical Hacker"
   ],
-  "about": "hi",
-  "experiencia": "WORK EXPERIENCE",
-  "educacion": "EDUCATION"
+  "home_titulo":"Graduated in Computer Engineering and Virtual Technologies. Specialized in Cybersecurity.",
+  "home_cv": "Download CV",
+
+  "about_static": "About",
+  "about_span": "Me",
+  "about_titulo": "Cybersecurity Engineer!",
+  "about_section": "Passionate about cybersecurity and secure software development. I have experience in professional environments of technical support, process automation and web development. My goal is to contribute to the security and efficiency of IT systems by combining technical skills with analytical thinking, dynamism, proactivity and enthusiasm.",
+
+  "education_static": "My",
+  "education_span": "Experiences",
+  "educacion": "Education",
+  "experiencia": "Experience",
+  "exp_master2_titulo": "Master in Offensive Cybersecurity - International Cybersecurity Campus",
+  "exp_master2_intro": "Advanced hands-on training in ethical hacking, vulnerability analysis, and offensive techniques using real labs and attack.",
+  "exp_master2_1": "Full pentesting (recon, exploitation, post-exploitation).",
+  "exp_master2_2": "Vulnerability analysis, reverse engineering and malware.",
+  "exp_master2_3": "Network hacking, firewall evasion and system attacks.",
+
+  "exp_master1_titulo": "Master in Cybersecurity Management, Ethical Hacking and Security - EIP Business School",
+  "exp_master1_intro": "Strategic and technical vision of cybersecurity, combining offensive, defensive and management skills. Preparation for OSCP, CISM and EHE.",
+  "exp_master1_1": "Ethical hacking, advanced pentesting and auditory.",
+  "exp_master1_2": "Incident response, business continuity and resilience.",
+  "exp_master1_3": "Cybersecurity applied to AI, cloud and OT environments.",
+
+  "exp_grado_titulo": "Bachelor in Computer Engineering and Virtual Technologies - Loyola University Andalusia",
+  "exp_grado_intro": "Solid background in programming, networks, systems and emerging technologies. Final project focused on educational improvement.",
+  "exp_grado_1": "Programming (C, Python, JS, SQL) and web/mobile development.",
+  "exp_grado_2": "Virtual reality, 3D simulation and UX.",
+  "exp_grado_3": "Foundations of AI, machine learning and interactive systems.",
+
+  "exp_astron_fecha": " 19 mayo 2025 - currently",
+  "titulo_astron": "Software Development Engineer - Informática Astron Multimedia, S.L.",
+  "exp_astron_intro": "Collaboration on technical projects for public administrations with a focus on security and support.",
+  "exp_astron_1": "ENS documentation preparation.",
+  "exp_astron_2": "Systems, database and server administration.",
+  "exp_astron_3": "Assistance in the NIX service.",
+
+  "exp_inetum_fecha": "17 septiembre 2024 - 17 enero 2025",
+  "titulo_inetum": "Cybersecurity Intern — Inetum",
+  "exp_inetum_intro": "Collaboration in the cybersecurity area supporting service management and technical documentation of processes.",
+  "exp_inetum_1": "Documentation of processes and procedures.",
+  "exp_inetum_2": "Support for service management and communication/system requests.",
+  "exp_inetum_3": "Technical support and programming.",
+
+  "exp_lauferga_fecha": "18 julio 2022 - 10 octubre 2022",
+  "titulo_lauferga": "Web Development Intern — LauFerGar, S.L.",
+  "exp_laufega_intro": "Development of custom web solutions for internal automation and direct customer service.",
+  "exp_lauferga_1": "Creation of web applications to automate schedules and duty shifts using PHP, MySQL and JavaScript.",
+  "exp_lauferga_2": "Effective communication to ensure customer satisfaction.",
+  "exp_lauferga_3": "Advanced use of tools for web development, file management and software testing.",
+
+  "skills_static": "My",
+  "skills_span": "Skills",
+  "habilidades_hard": "Hard Skills",
+  "habilidades_soft": "Soft Skills",
+
+  "hard_1": "Vulnerability Analysis",
+  "hard_2": "C/C++/C#, Python, Bash, JavaScript",
+  "hard_3": "Pretesting",
+  "hard_4": "Web Development",
+  "hard_5": "Velneo",
+
+  "soft_1": "Adaptability",
+  "soft_2": "Customer Service",
+  "soft_3": "Creativity",
+  "soft_4": "Communication",
+  "soft_5": "Teamwork",
+
+  "proyect1_titulo": "Shift and schedule management application",
+  "proyect1_descripcion": "Web application developed to automate the planning of duty rosters. Optimizes personnel management and improves internal organization."
 }

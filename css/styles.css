@@ -29,12 +29,14 @@ body.active {
 
 html {
     font-size: 62.5%;
-    /*overflow: hidden;*/
+    /* overflow: hidden; */
 }
 
 body {
    background: var(--bg-color);
    color: var(--text-color);
+    overflow-x: hidden;
+  transition: background-color 0.5s ease, color 0.5s ease-in-out;
 }
 
 /* Custom Scroll Bar CSS */
@@ -63,12 +65,12 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 10%;
-    padding: 1rem 2rem;
+    height: auto;
+    padding: 1.5rem 7rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--bg);
+    background-color: transparent;
     z-index: 1000;
     backdrop-filter: blur(6px);
 }
@@ -82,10 +84,6 @@ body {
   display: flex;
   align-items: center;
   gap: 1rem;
-}
-
-.header.sticky {
-    background: var(--bg-color);
 }
 
 .header.sticky #darkMode-icon {
@@ -135,7 +133,8 @@ body {
   transition: 0.2s linear;
 }
 
-.navbar a:hover::before {
+.navbar a:hover::before,
+.navbar a.active::before {
   width: 100%;
 }
 
@@ -145,7 +144,6 @@ body {
   height: 24px;
   display: flex;
   align-items: center;
-  margin-right: 10px;
   border-radius: 999px;
   background-color: #DFDEDE;
   cursor: pointer;
@@ -257,7 +255,7 @@ section {
 }
 
 .home-content h1 span {
-    color: var(--text-color);
+    color: var(--main-color);
 }
 
 .home-content p {
@@ -265,8 +263,10 @@ section {
     margin: 2rem 0 4rem;
 }
 
-.home .nombre {
-    color: var(--main-color);
+.home-heading {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
 }
 
 /* BOTONES */
@@ -413,6 +413,8 @@ section {
 ----------*/
 
 .about {
+    min-height: 100vh;
+    padding: 10rem 9% 10rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -425,6 +427,10 @@ section {
     font-size: 5rem;
     text-align: center;
     padding: 0 9% 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
 }
 
 span {
@@ -531,6 +537,8 @@ section .about-content h3{
 ----------*/
 
 .education {
+    min-height: 100vh;
+    padding: 10rem 9% 10rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -552,7 +560,7 @@ section .about-content h3{
 
 .education-column .title {
     font-size: 2.5rem;
-    margin: 0 0 1.5rem 2rem;
+    margin: 0 0 5rem 2rem;
 }
 
 .education-column .education-box {
@@ -606,32 +614,39 @@ section .about-content h3{
 }
 
 .education-content .content .year {
+    display: flex;
+    align-items: center;
     font-size: 1.5rem;
     color: var(--main-color);
     padding-bottom: .5rem;
 }
 
-.education-content .content .year i {
+.education-content .content .year ion-icon {
     padding-right: .5rem;
 }
 
 .education-content .content h3 {
+    text-align: justify;
     font-size: 2rem;
+    margin: 1rem 2rem;
 }
 
 .education-content .content li {
+    text-align: justify;
     font-size: 1.6rem;
-    margin-left: 3rem;
+    margin: 0.5rem 1rem 0.5rem 4rem;
 }
 
 .education-content .content p {
+    text-align: justify;
     font-size: 1.7rem;
-    padding-top: .5rem;
+    margin: 1rem 2rem;
 }
 
 .education-content .content a {
     text-decoration: none;
     color: var(--main-color);
+    cursor: pointer;
 }
 
 /* ---------
@@ -677,6 +692,14 @@ section .about-content h3{
     padding: 1rem 0;
 }
 
+.skills-content .progress .cont {
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .skills-content .progress h3 {
     font-size: 2rem;
     display: flex;
@@ -719,6 +742,8 @@ section .about-content h3{
 ----------*/
 
 .portfolio {
+    min-height: 100vh;
+    padding: 10rem 9% 10rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -787,6 +812,8 @@ section .about-content h3{
 ----------*/
 
 .contact {
+    min-height: 100vh;
+    padding: 10rem 9% 10rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -912,13 +939,13 @@ section .about-content h3{
     width: 100%;
 }
 
-.footer-iconTop a i {
+.footer-iconTop a ion-icon {
     font-size: 2.4rem;
     color: var(--bg-color);
     transition: .5s;
 }
 
-.footer-iconTop a:hover i {
+.footer-iconTop a:hover ion-icon {
     color: var(--main-color);
 }
 
@@ -930,8 +957,8 @@ section .about-content h3{
 }
 
 @media (max-width: 1100px) {
-    .header{
-        padding: 2rem 4%;
+    header{
+        padding: 1.5rem 6%;
     }
 
     .portfolio .portfolio-container {
@@ -943,17 +970,16 @@ section .about-content h3{
 }
 
 @media (max-width: 900px) {
-    .header {
-        position: absolute;
-        background:  var(--bg-color);
-    }
-
     .home {
         background: transparent;
     }
 
     #menu-icon {
         display: block;
+    }
+
+    header{
+        padding: 1.5rem 6%;
     }
 
     .navbar {
@@ -1019,19 +1045,6 @@ section .about-content h3{
         height: 80%;
     }
 
-    .typing-text {
-        font-size: 2.2rem;
-    }
-
-    .home-content h1 {
-        font-size: 2.6rem;
-    }
-
-
-    .home-content p {
-        font-size: 2rem;
-    }
-
     .portfolio .boxes .box {
         width: calc(50% - 2rem);
     }
@@ -1062,6 +1075,10 @@ section .about-content h3{
         font-size: 50%;
     }
 
+    header{
+        padding: 1.5rem 6%;
+    }
+
     .home {
         background: transparent;
     }
@@ -1089,6 +1106,20 @@ section .about-content h3{
         background: transparent;
     }
 
+    header{
+        padding: 1.5rem 6%;
+    }
+
+    .home-heading {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home-heading div,
+    .home-heading span {
+        font-size: 5rem;
+    }
+
     .portfolio .portfolio-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -1101,21 +1132,62 @@ section .about-content h3{
     }
 }
 
+@media (max-width: 400px) {
+  header {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    width: 80%;
+  }
+
+  .typing-text {
+    display: none;
+  }
+
+  .header-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: auto;
+  }
+
+  .dark-mode {
+    flex-shrink: 0;
+  }
+
+  .language-selector {
+    flex-shrink: 0;
+  }
+
+  #menu-icon {
+    font-size: 2.5rem;
+  }
+}
+
+
 @media (max-width: 371px) {
     html {
         font-size: 44%;
     }
+}
 
-    .home {
-        justify-content: center;
-    }
+@media (max-width: 1100px) and (orientation: landscape) {
+  .home-content {
+    position: static;
+    z-index: 1;
+  }
 
-    .home-content {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
-    }
+  .home-sci {
+    position: static;
+    margin-top: 10rem;
+    justify-content: center;
+  }
+
+  .home-sci a {
+    margin: 0 1rem;
+  }
 }
 
 /* ANIMACIONES */

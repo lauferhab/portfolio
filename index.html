@@ -8,13 +8,12 @@
     <title>Personal Portafolio</title>
 
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" type="img/png" href="img/control-de-juegos-para-pc.png"/>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="icon" type="img/svg" href="img/finger-print-outline.svg"/>
 
     <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 </head>
@@ -23,18 +22,19 @@
 
     <!-- header design -->
     <header class="header">
-        <a href="#" class="logo">Laura <span>Ferrer</span></a>
+        <a href="#" class="logo" data-aos="zoom-in" data-aos-duration="1100">L<span>FH</span></a>
         <nav class="navbar">
-            <a href="index.php" class="active" >HOME</a>
-            <a href="#about">SOBRE MI</a>
-            <a href="#education">EDUCACION</a>
-            <a href="#skills">SKILLS</a>
-            <a href="#portfolio" >PORTFOLIO</a>
+            <a href="#home" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="100" class="active">HOME</a>
+            <a href="#about" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="200" data-lang="nav_about"></a>
+            <a href="#education" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="300" data-lang="nav_educacion"></a>
+            <a href="#skills" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="400">SKILLS</a>
+            <a href="#portfolio" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="500">PORTFOLIO</a>
+            <a href="#contacto" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="500" data-lang="nav_contacto"></a>
 
             <span class="active-nav"></span>
         </nav>
         <div class="header-controls">
-            <div class="dark-mode link">
+            <div data-aos="fade-up" data-aos-duration="1100" data-aos-delay="100" class="dark-mode">
                 <div class="circle">
                     <ion-icon class="sun" name="sunny"></ion-icon>
                     <ion-icon class="moon" name="moon"></ion-icon>
@@ -42,7 +42,7 @@
                 </div>
             </div>
 
-            <div class="language-selector link">
+            <div data-aos="fade-up" data-aos-duration="1100" data-aos-delay="100" class="language-selector">
                 <button id="lang-es" aria-label="Cambiar a Español" class="active">
                     <img src="./img/espana.png" alt="Español" />
                 </button>
@@ -52,7 +52,7 @@
                 <script src="./js/idioma.js"></script>
             </div>
 
-            <div class="bx bx-menu" id="menu-icon"></div>
+            <ion-icon data-aos="fade-up" data-aos-duration="1100" data-aos-delay="100" id="menu-icon" class="menu-toggle-icon" name="ellipsis-vertical"></ion-icon>
         </div>
 
     </header>
@@ -60,107 +60,138 @@
     <!-- home section design -->
     <section class="home" id="home">
         <div class="home-content">
-            <h1 data-lang="saludo">
-                <span id="saludo-text" class="saludo"></span> <span id="nombre" class="nombre"></span>
+            <h1 class="home-heading" data-aos="fade-left" data-aos="fade-left" data-aos-duration="1100" data-aos-delay="700">
+                <div data-lang="home_static"></div> <span data-lang="home_span"></span>
             </h1>
-            <h3 class="typing-text"><span> </span></h3> 
-            <p data-aos="flip-up">Graduada en Ingeniería Informática y Tecnologías Virtuales.
-                Especializada en Ciberseguridad.
-            </p>
+            <h3 data-aos="fade-right" data-aos-duration="1100" data-aos-delay="900"  class="typing-text"><span> </span></h3> 
+            <p data-aos="flip-up" data-aos-duration="1100" data-aos-delay="1100" data-lang="home_titulo"></p>
 
-            <div class="btn-box">
-                <a href="#" class="btn">Descargar CV</a>
+            <div class="btn-box" data-aos="zoom-in-left" data-aos-duration="1100" data-aos-delay="1700">
+                <a href="#" class="btn" data-lang="home_cv">Descargar CV</a>
             </div>
 
             <div class="home-sci">
-                <a href="#"><i class='bx bxl-whatsapp' ></i></a>
-                <a href="#"><i class='bx bxs-envelope' ></i></a>
-                <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                <a href="#" data-aos="zoom-out" data-aos-duration="1100" data-aos-delay="1300"><ion-icon name="logo-github"></ion-icon></a>
+                <a href="#" data-aos="zoom-out" data-aos-duration="1100" data-aos-delay="1400"><ion-icon name="mail-outline"></ion-icon></a>
+                <a href="#" data-aos="zoom-out" data-aos-duration="1100" data-aos-delay="1500"><ion-icon name="logo-linkedin"></ion-icon></a>
             </div>
-
-            <!-- <div class="home-imgHover"></div> -->
 
         </div>
     </section>
 
     <!-- about section design -->
     <section class="about" id="about">
-        <h2 class="heading" >Sobre <span>Mi</span></h2>
-        <div class="about-img">
+        <h2 data-aos="fade-up" data-aos-duration="1100" class="heading"> <p data-lang="about_static"></p> <span data-lang="about_span"></span></h2>
+        <div data-aos="fade-right" data-aos-duration="1100" data-aos-delay="100" class="about-img">
             <img src="img/laura.png"/>
             <span class="circle-spin"></span>
         </div>
         <div class="about-content">
-            <h3>¡Ingeniera Informática!</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-            Sunt voluptatum iste similique mollitia rerum exercitationem nesciunt saepe enim reprehenderit, 
-            deserunt odio obcaecati veritatis libero. Asperiores, saepe? At quidem labore aspernatur. 
-            Ad, consectetur non quo veniam maxime, porro ratione debitis est minima, laboriosam voluptate cumque error eveniet et fuga mollitia sit.</p>
+            <h3 data-aos="fade-left" data-aos-duration="1100" data-aos-delay="200" data-lang="about_titulo"></h3>
+            <p data-aos="fade-right" data-aos-duration="1100" data-aos-delay="400" data-lang="about_section"></p>
         </div>
     </section>
 
     <!-- education section design -->
     <section class="education" id="education">
-        <h2 class="heading">Mi <span>Experiencia</span></h2>
+        <h2 data-aos="fade-up" data-aos-duration="1100" class="heading"> <p data-lang="education_static"> </p> <span data-lang="education_span"></span></h2>
         <div class="education-row">
             <div class="education-column">
-                <div class="title"><span data-lang="educacion"></span></div>
+                <div data-aos="fade-left" data-aos-duration="1100" data-aos-delay="200" class="title"><span data-lang="educacion"></span></div>
                 <div class="education-box">
-                    <div class="education-content">
+                    <div data-aos="zoom-out" data-aos-duration="1100" data-aos-delay="1315" class="education-content">
                         <div class="content">
-                            <div class="year"><i class='bx bxs-calendar' ></i> 2025 - 2026</div>
-                            <h3><a href="estudios/master2.html">Máster en Ciberseguridad Ofensiva - Campus Internacional de Ciberseguridad</a></h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere vitae iure molestias. Quas tenetur blanditiis voluptatum sapiente, 
-                            similique praesentium labore eum nihil libero facere atque. Recusandae, consequuntur!</p>
+                            <div class="year">
+                                <ion-icon name="calendar-outline"></ion-icon>
+                                <div>2025 - 2026</div>
+                            </div>
+                            <h3 data-lang="exp_master2_titulo"><a href="estudios/master2.html"></a></h3>
+                            <p data-lang="exp_master2_intro"></p>
+                            <ul>
+                                <li data-lang="exp_master2_1"></li>
+                                <li data-lang="exp_master2_2"></li>
+                                <li data-lang="exp_master2_3"></li>
+                              </ul>
                         </div>
                     </div>
-                    <div class="education-content">
+                    <div data-aos="zoom-out" data-aos-duration="1100" data-aos-delay="1315" class="education-content">
                         <div class="content">
-                            <div class="year"><i class='bx bxs-calendar' ></i> 2023 - 2025</div>
-                            <h3><a href="estudios/master2.html">Máster en Dirección de Ciberseguridad, Hacking Ético y Seguridad - EIP Business School</a></h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere vitae iure molestias. Quas tenetur blanditiis voluptatum sapiente, 
-                            similique praesentium labore eum nihil libero facere atque. Recusandae, consequuntur!</p>
+                            <div class="year">
+                                <ion-icon name="calendar-outline"></ion-icon>
+                                <div>2023 - 2025</div>
+                            </div>
+                            <h3 data-lang="exp_master1_titulo"><a href="estudios/master1.html"></a></h3>
+                            <p data-lang="exp_master1_intro"></p>
+                            <ul>
+                                <li data-lang="exp_master1_1"></li>
+                                <li data-lang="exp_master1_2"></li>
+                                <li data-lang="exp_master1_3"></li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="education-content">
+                    <div data-aos="zoom-out" data-aos-duration="1100" data-aos-delay="1305" class="education-content">
                         <div class="content">
-                            <div class="year"><i class='bx bxs-calendar' ></i> 2019 - 2023</div>
-                            <h3><a href="estudios/master2.html">Grado en Ingeniería Informática y Tecnologías Virtuales- Universidad Loyola Andalucía</a></h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere vitae iure molestias. Quas tenetur blanditiis voluptatum sapiente, 
-                            similique praesentium labore eum nihil libero facere atque. Recusandae, consequuntur!</p>
+                            <div class="year">
+                                <ion-icon name="calendar-outline"></ion-icon> 
+                                <div>2019 - 2023</div>
+                            </div>
+                            <h3 data-lang="exp_grado_titulo"><a href="estudios/grado.html"></a></h3>
+                            <p data-lang="exp_grado_intro"></p>
+                            <ul>
+                                <li data-lang="exp_grado_1"></li>
+                                <li data-lang="exp_grado_2"></li>
+                                <li data-lang="exp_grado_3"></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="education-column">
+            <div data-aos="zoom-out" data-aos-duration="1100" data-aos-delay="1315" class="education-column">
                 <div class="title"><span data-lang="experiencia"></span></div>
                 <div class="education-box">
                     <div class="education-content">
                         <div class="content">
-                            <div class="year"><i class='bx bxs-calendar' ></i> 19 mayo 2025 - actualmente</div>
-                            <h3>Ingeniera de Desarrollo Software - Informática Astron Multimedia, S.L.</h3>
-                            <p data-lang="exp_astron_intro">Colaboración en proyectos técnicos para administraciones públicas con enfoque en seguridad y soporte.</p>
+                            <div class="year">
+                                <ion-icon name="calendar-outline"></ion-icon>
+                                <div data-lang="exp_astron_fecha"></div>
+                            </div>
+                            <h3 data-lang="titulo_astron"></h3>
+                            <p data-lang="exp_astron_intro"></p>
                               <ul>
-                                <li data-lang="exp_astron_1">Elaboración documental del ENS.</li>
-                                <li data-lang="exp_astron_2">Administración de sistemas, bases de datos y servidores.</li>
-                                <li data-lang="exp_astron_3">Soporte técnico y programación.</li>
+                                <li data-lang="exp_astron_1"></li>
+                                <li data-lang="exp_astron_2"></li>
+                                <li data-lang="exp_astron_3"></li>
                               </ul>
                         </div>
                     </div>
-                    <div class="education-content">
+                    <div data-aos="zoom-out" data-aos-duration="1100" data-aos-delay="1310" class="education-content">
                         <div class="content">
-                            <div class="year"><i class='bx bxs-calendar' ></i> 2021</div>
-                            <h3>Auxiliar Administrativa - LauFerGar, S.L</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere vitae iure molestias. Quas tenetur blanditiis voluptatum sapiente, 
-                            similique praesentium labore eum nihil libero facere atque. Recusandae, consequuntur!</p>
+                            <div class="year">
+                                <ion-icon name="calendar-outline"></ion-icon>
+                                <div data-lang="exp_inetum_fecha"></div>
+                            </div>
+                            <h3 data-lang="titulo_inetum"></h3>
+                            <p data-lang="exp_inetum_intro"></p>
+                                <ul>
+                                    <li data-lang="exp_inetum_1"></li>
+                                    <li data-lang="exp_inetum_2"></li>
+                                    <li data-lang="exp_inetum_3"></li>
+                                </ul>
                         </div>
                     </div>
-                    <div class="education-content">
+                    <div data-aos="zoom-out" data-aos-duration="1100" data-aos-delay="1305" class="education-content">
                         <div class="content">
-                            <div class="year"><i class='bx bxs-calendar' ></i> 2022</div>
-                            <h3>Auxiliar Administrativa - LauFerGar, S.L</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere vitae iure molestias. Quas tenetur blanditiis voluptatum sapiente, 
-                            similique praesentium labore eum nihil libero facere atque. Recusandae, consequuntur!</p>
+                            <div class="year">
+                                <ion-icon name="calendar-outline"></ion-icon>
+                                <div data-lang="exp_lauferga_fecha"></div>
+                            </div>
+                            <h3 data-lang="titulo_lauferga"></h3>
+                            <p data-lang="exp_laufega_intro"></p>
+                                    <ul>
+                                    <li data-lang="exp_lauferga_1"></li>
+                                    <li data-lang="exp_lauferga_2"></li>
+                                    <li data-lang="exp_lauferga_3"></li>
+                              </ul>
                         </div>
                     </div>
                 </div>
@@ -171,26 +202,91 @@
     <!-- skills section design -->
     <section class="skills" id="skills">
         <div class="skill">
-            <h2 class="heading">Mis <span>Habilidades</span></h2>
+            <h2 data-aos="fade-up" data-aos-duration="1100" class="heading"> <p data-lang="skills_static"> </p> <span data-lang="skills_span"></span></h2>
             <div class="skills-row">
+                <!-- Hard Skills -->
                 <div class="skills-column">
-                    <h3 class="title">Hard Skills</h3>
+                    <h3 data-aos="fade-right" data-aos-duration="1100" data-aos-delay="900" class="title" data-lang="habilidades_hard">Hard Skills</h3>
                     <div class="skills-box">
                         <div class="skills-content">
-                            <div class="progress">
-                                <h3>Programación Web <span>100%</span></h3>
-                                <div class="bar"><span></span></div>
+                            <div data-aos="flip-up" data-aos-duration="1100" data-aos-delay="1100" class="progress">
+                                <div class="cont">
+                                    <h3 data-lang="hard_1">Análisis de vulnerabilidades</h3>
+                                    <span>95%</span>
+                                </div>
+                                <div class="bar"><span style="width: 95%;"></span></div>
+                            </div>
+                            <div data-aos="flip-up" data-aos-duration="1100" data-aos-delay="1200" class="progress">
+                                <div class="cont">
+                                    <h3 data-lang="hard_2">C/C++/C#, Python, Bash, JavaScript </h3>
+                                    <span>90%</span>
+                                </div>
+                                <div class="bar"><span style="width: 90%;"></span></div>
+                            </div>
+                            <div data-aos="flip-up" data-aos-duration="1100" data-aos-delay="1300" class="progress">
+                                <div class="cont">
+                                    <h3 data-lang="hard_3">Pretesting</h3>
+                                    <span>85%</span>
+                                </div>
+                                <div class="bar"><span style="width: 85%;"></span></div>
+                            </div>
+                            <div data-aos="flip-up" data-aos-duration="1100" data-aos-delay="1400" class="progress">
+                                <div class="cont">
+                                    <h3 data-lang="hard_4">Programación Web</h3>
+                                    <span>100%</span>
+                                </div>
+                                <div class="bar"><span style="width: 100%;"></span></div>
+                            </div>
+                            <div data-aos="flip-up" data-aos-duration="1100" data-aos-delay="1400" class="progress">
+                                <div class="cont">
+                                    <h3 data-lang="hard_5">Velneo</h3>
+                                    <span>70%</span>
+                                </div>
+                                <div class="bar"><span style="width: 70%;"></span></div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- Soft Skills -->
                 <div class="skills-column">
-                    <h3 class="title">Soft Skills</h3>
+                    <h3 data-aos="fade-right" data-aos-duration="1100" data-aos-delay="900" class="title" data-lang="habilidades_soft">Soft Skills</h3>
                     <div class="skills-box">
                         <div class="skills-content">
-                            <div class="progress">
-                                <h3>Inglés <span>75%</span></h3>
-                                <div class="bar"><span></span></div>
+                            <div data-aos="flip-up" data-aos-duration="1100" data-aos-delay="1100" class="progress">
+                                <div class="cont">
+                                    <h3 data-lang="soft_1">Adaptabilidad</h3>
+                                    <span>90%</span>
+                                </div>
+                                <div class="bar"><span style="width: 90%;"></span></div>
+                            </div>
+                            <div data-aos="flip-up" data-aos-duration="1100" data-aos-delay="1200" class="progress">
+                                <div class="cont">
+                                    <h3 data-lang="soft_2">Atención al cliente</h3>
+                                    <span>85%</span>
+                                </div>
+                                <div class="bar"><span style="width: 85%;"></span></div>
+                            </div>
+                            <div data-aos="flip-up" data-aos-duration="1100" data-aos-delay="1300" class="progress">
+                                <div class="cont">
+                                    <h3 data-lang="soft_3">Creatividad</h3>
+                                    <span>80%</span>
+                                </div>
+                                <div class="bar"><span style="width: 80%;"></span></div>
+                            </div>
+                            <div data-aos="flip-up" data-aos-duration="1100" data-aos-delay="1400" class="progress">
+                                <div class="cont">
+                                    <h3 data-lang="soft_4">Comunicación</h3>
+                                    <span>90%</span>
+                                </div>
+                                <div class="bar"><span style="width: 90%;"></span></div>
+                            </div>
+                            <div data-aos="flip-up" data-aos-duration="1100" data-aos-delay="1400" class="progress">
+                                <div class="cont">
+                                    <h3 data-lang="soft_5">Trabajo en equipo</h3>
+                                    <span>95%</span>
+                                </div>
+                                <div class="bar"><span style="width: 95%;"></span></div>
                             </div>
                         </div>
                     </div>
@@ -202,46 +298,46 @@
     <!-- portfolio section -->
     <section class="portfolio" id="portfolio">
       <div class="content">
-        <h2 class="heading">Mis <span>Portfolio</span></h2>
+        <h2 data-aos="fade-up" data-aos-duration="1100" class="heading">Mis <span>Portfolio</span></h2>
         <div class="boxes">
           <div class="box" >
             <div class="icon">
-              <i class="fas fa-desktop"></i>
+              <ion-icon name="desktop-outline"></ion-icon>
             </div>
-            <h3 class="topic">Web Devlopment</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem eligendi?</p>
+            <h3 data-lang="proyect1_titulo" class="topic">Web Devlopment</h3>
+            <p data-lang="proyect1_descripcion"></p>
           </div>
           <div class="box">
             <div class="icon">
-              <i class="fas fa-paint-brush"></i>
+              <ion-icon name="brush-outline"></ion-icon>
             </div>
             <h3 class="topic">Graphic Design</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem eligendi?</p>
           </div>
           <div class="box" >
             <div class="icon">
-              <i class="fas fa-chart-line"></i>
+              <ion-icon name="bar-chart-outline"></ion-icon>
             </div>
             <h3 class="topic">Digital Marketing</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem eligendi?</p>
           </div>
           <div class="box" >
             <div class="icon">
-              <i class="fab fa-android"></i>
+              <ion-icon name="logo-android"></ion-icon>
             </div>
             <h3 class="topic">Icon Design</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem eligendi?</p>
           </div>
           <div class="box" >
             <div class="icon">
-              <i class="fas fa-camera-retro"></i>
+              <ion-icon name="camera-outline"></ion-icon>
             </div>
             <h3 class="topic">Photography</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem eligendi?</p>
           </div>
           <div class="box">
             <div class="icon">
-              <i class="fas fa-tablet-alt"></i>
+              <ion-icon name="terminal-outline"></ion-icon>
             </div>
             <h3 class="topic">Apps Devlopment</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem eligendi?</p>
@@ -251,7 +347,7 @@
     </section>
 
     <!-- contact section design  -->
-    <section class="contact" id="contact">
+    <section class="contact" id="contacto">
         <h2 class="heading">¡Contacta<span>me</span>!</h2>
         <form action="#">
             <div class="input-box">
@@ -294,13 +390,11 @@
         </div>
 
         <div class="footer-iconTop">
-            <a href="#"><i class='bx bx-up-arrow-alt' ></i></a>
+            <a href="#"><ion-icon name="arrow-up-outline"></ion-icon></a>
         </div>
     </footer>
 
     <script src="js/script.js"></script>
-    <script src="js/idioma.js"></script>
-    <script src="js/tema.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init({

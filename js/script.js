@@ -2,8 +2,14 @@ let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
 menuIcon.onclick = () => {
-    menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
+
+    // Cambia el icono dependiendo del estado del menú
+    if (navbar.classList.contains('active')) {
+        menuIcon.setAttribute('name', 'close-outline'); // muestra la X
+    } else {
+        menuIcon.setAttribute('name', 'ellipsis-vertical'); // muestra los 3 puntos
+    }
 }
 
 let section = document.querySelectorAll('section');
@@ -23,10 +29,6 @@ window.onscroll = () => {
             });
         }
     });
-
-    let header = document.querySelector('header');
-    header.classList.toggle('sticky', window.scrollY > 100);
-
-    menuIcon.classList.remove('bx-x');
     navbar.classList.remove('active');
+    menuIcon.setAttribute('name', 'ellipsis-vertical');
 }
